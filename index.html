@@ -6,25 +6,22 @@
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f4f8;
         margin: 0;
-        padding: 0;
         display: flex;
     }
 
     /* Sidebar fijo a la izquierda */
     .sidebar {
-        position: fixed; /* fijo al scroll */
+        position: fixed;
         top: 0;
         left: 0;
-        width: 250px; /* ancho del menú */
-        height: 100vh; /* toda la altura de la pantalla */
+        width: 250px;
+        height: 100vh;
         background: #fff;
         padding: 40px 20px;
         box-shadow: 2px 0 15px rgba(0,0,0,0.1);
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
     }
 
     .sidebar h1 {
@@ -40,7 +37,7 @@
     }
 
     .sidebar li {
-        margin: 18px 0;
+        margin: 15px 0;
     }
 
     .sidebar a {
@@ -53,17 +50,28 @@
         transition: all 0.3s;
     }
 
-    .sidebar a:hover {
+    .sidebar a:hover,
+    .sidebar a.active {
         background-color: #2980b9;
         color: #fff;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
-    /* Contenido principal a la derecha del sidebar */
+    /* Contenido principal a la derecha */
     .content {
-        margin-left: 270px; /* igual al ancho del sidebar + margen */
+        margin-left: 270px; /* ancho del sidebar + margen */
         padding: 40px;
         flex: 1;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+
+    section h2 {
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+        color: #2c3e50;
     }
 
     @media (max-width: 600px) {
@@ -84,16 +92,68 @@
     <div class="sidebar">
         <h1>📚 Índice de contenidos</h1>
         <ul>
-            <li><a href="riesgos.html">1. ¿Qué son los riesgos laborales?</a></li>
-            <li><a href="ergonomia.html">2. Riesgos ergonómicos en el uso del ordenador</a></li>
-            <li><a href="electricos.html">3. Riesgos eléctricos y de equipos informáticos</a></li>
-            <li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
-            <li><a href="prevencion.html">5. Medidas de prevención</a></li>
+            <li><a href="#riesgos-laborales">1. ¿Qué son los riesgos laborales?</a></li>
+            <li><a href="#ergonomia">2. Riesgos ergonómicos en el uso del ordenador</a></li>
+            <li><a href="#electricos">3. Riesgos eléctricos y de equipos informáticos</a></li>
+            <li><a href="#ciberseguridad">4. Riesgos de ciberseguridad</a></li>
+            <li><a href="#prevencion">5. Medidas de prevención</a></li>
         </ul>
     </div>
 
     <div class="content">
-        <!-- Aquí iría el contenido principal si quieres agregar algo -->
+        <section id="riesgos-laborales">
+            <h2>¿Qué son los riesgos laborales?</h2>
+            <p>Explicación sobre riesgos laborales generales...</p>
+        </section>
+
+        <section id="ergonomia">
+            <h2>Riesgos ergonómicos en el uso del ordenador</h2>
+            <p>Explicación sobre postura, fatiga, lesiones musculares...</p>
+        </section>
+
+        <section id="electricos">
+            <h2>Riesgos eléctricos y de equipos informáticos</h2>
+            <p>Explicación sobre enchufes, cables, cortocircuitos...</p>
+        </section>
+
+        <section id="ciberseguridad">
+            <h2>Riesgos de ciberseguridad</h2>
+            <p>Explicación sobre protección de datos, malware, etc...</p>
+        </section>
+
+        <section id="prevencion">
+            <h2>Medidas de prevención</h2>
+            <p>Buenas prácticas para minimizar riesgos en informática...</p>
+        </section>
     </div>
+
+    <script>
+        // Seleccionar todos los enlaces del sidebar
+        const links = document.querySelectorAll('.sidebar a');
+        const sections = document.querySelectorAll('section');
+
+        // Función para quitar "active" de todos los enlaces
+        function removeActive() {
+            links.forEach(link => link.classList.remove('active'));
+        }
+
+        // Detectar scroll y resaltar el enlace activo
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
