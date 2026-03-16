@@ -4,93 +4,83 @@
 <meta charset="UTF-8">
 <title>Riesgos Laborales en Informática</title>
 <style>
+    /* Fuente y fondo general */
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f4f8;
-        color: #333;
+        background: linear-gradient(to bottom, #e0eafc, #f0f4f8);
         margin: 0;
         padding: 0;
-    }
-
-    /* Contenedor principal con sidebar */
-    .container {
         display: flex;
-        max-width: 1200px;
-        margin: 40px auto;
-        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 
-    /* Sidebar izquierdo grande */
+    /* Contenedor principal del índice */
     .sidebar {
-        flex: 2; /* más ancho que antes */
+        width: 420px;
         background: #fff;
-        padding: 30px 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        height: fit-content;
-        position: sticky;
-        top: 20px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
     }
 
-    .sidebar h1 {
+    .sidebar:hover {
+        transform: translateY(-5px);
+    }
+
+    h1 {
         text-align: center;
         color: #2c3e50;
-        margin-bottom: 20px;
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
     }
 
-    .sidebar h2 {
-        margin-top: 0;
-        color: #2c3e50;
-        border-bottom: 2px solid #2c3e50;
-        padding-bottom: 10px;
-    }
-
-    .sidebar ul {
+    ul {
         list-style: none;
         padding-left: 0;
     }
 
-    .sidebar li {
-        margin: 20px 0;
-        font-size: 1.3em; /* más grande */
+    li {
+        margin: 18px 0;
+        font-size: 1.2em;
+        position: relative;
+        transition: transform 0.2s;
     }
 
-    .sidebar li a {
+    li:hover {
+        transform: translateX(5px);
+    }
+
+    a {
         text-decoration: none;
         color: #2980b9;
         font-weight: bold;
-        transition: color 0.3s;
+        display: block;
+        padding: 8px 12px;
+        border-radius: 8px;
+        transition: all 0.3s;
     }
 
-    .sidebar li a:hover {
-        color: #e74c3c;
+    a:hover {
+        background-color: #2980b9;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
-    /* Contenido principal vacío por ahora */
-    .main {
-        flex: 3; /* menor ancho que la sidebar ahora */
-        background: #fff;
-        padding: 30px 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-        .container {
-            flex-direction: column;
-        }
+    /* Responsive para móviles */
+    @media (max-width: 500px) {
         .sidebar {
-            position: static;
-            margin-bottom: 20px;
+            width: 90%;
+            padding: 25px;
         }
     }
 </style>
 </head>
 
 <body>
-<div class="container">
-    <!-- Sidebar izquierdo grande -->
     <div class="sidebar">
         <h1>📚 Índice de contenidos</h1>
         <ul>
@@ -101,11 +91,5 @@
             <li><a href="prevencion.html">5. Medidas de prevención</a></li>
         </ul>
     </div>
-
-    <!-- Contenido principal vacío por ahora -->
-    <div class="main">
-        <!-- Aquí puedes agregar contenido más adelante si quieres -->
-    </div>
-</div>
 </body>
 </html>
