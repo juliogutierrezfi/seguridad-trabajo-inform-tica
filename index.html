@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Riesgos Laborales en Informática</title>
 <style>
-    /* Fuentes y estilo general */
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f0f4f8;
@@ -13,11 +12,58 @@
         padding: 0;
     }
 
-    /* Contenedor central */
+    /* Contenedor principal con sidebar */
     .container {
-        max-width: 900px;
+        display: flex;
+        max-width: 1200px;
         margin: 40px auto;
-        background-color: #fff;
+        gap: 30px;
+    }
+
+    /* Sidebar (índice) */
+    .sidebar {
+        flex: 1;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+    }
+
+    .sidebar h2 {
+        margin-top: 0;
+        color: #2c3e50;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .sidebar li {
+        margin: 12px 0;
+        font-size: 1.1em;
+    }
+
+    .sidebar li a {
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .sidebar li a:hover {
+        color: #e74c3c;
+    }
+
+    /* Contenido principal */
+    .main {
+        flex: 3;
+        background: #fff;
         padding: 30px 40px;
         border-radius: 10px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -39,25 +85,11 @@
         font-size: 1.1em;
     }
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    ul li {
-        margin: 12px 0;
-        font-size: 1.1em;
-    }
-
-    ul li a {
-        text-decoration: none;
-        color: #2980b9;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
-
-    ul li a:hover {
-        color: #e74c3c;
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #777;
     }
 
     .equipo p {
@@ -65,43 +97,52 @@
         font-size: 1em;
     }
 
-    footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #777;
+    /* Responsive */
+    @media (max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            position: static;
+            margin-bottom: 20px;
+        }
     }
 </style>
 </head>
 
 <body>
 <div class="container">
+    <!-- Sidebar izquierdo -->
+    <div class="sidebar">
+        <h2>📚 Índice de contenidos</h2>
+        <ul>
+            <li><a href="riesgos.html">1. ¿Qué son los riesgos laborales?</a></li>
+            <li><a href="ergonomia.html">2. Riesgos ergonómicos en el uso del ordenador</a></li>
+            <li><a href="electricos.html">3. Riesgos eléctricos y de equipos informáticos</a></li>
+            <li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
+            <li><a href="prevencion.html">5. Medidas de prevención</a></li>
+        </ul>
+    </div>
 
-<h1>💻 Riesgos laborales y prevención en informática</h1>
+    <!-- Contenido principal a la derecha -->
+    <div class="main">
+        <h1>💻 Riesgos laborales y prevención en informática</h1>
+        <p>En esta página se explican los principales riesgos laborales relacionados con el uso de equipos informáticos y las medidas de prevención para evitarlos.</p>
 
-<p>En esta página se explican los principales riesgos laborales relacionados con el uso de equipos informáticos y las medidas de prevención para evitarlos</p>
+        <h2>👥 Equipo del proyecto</h2>
+        <div class="equipo">
+            <p>Jose Manuel Pérez Berbel<br>
+            Juan Antonio Fernández Cabral<br>
+            Julio Gutiérrez Figueroa</p>
+        </div>
 
-<h2>📚 Índice de contenidos</h2>
-
-<ul>
-<li><a href="riesgos.html">1. ¿Qué son los riesgos laborales?</a></li>
-<li><a href="ergonomia.html">2. Riesgos ergonómicos en el uso del ordenador</a></li>
-<li><a href="electricos.html">3. Riesgos eléctricos y de equipos informáticos</a></li>
-<li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
-<li><a href="prevencion.html">5. Medidas de prevención</a></li>
-</ul>
-
-<h2>👥 Equipo del proyecto</h2>
-<div class="equipo">
-<p>Jose Manuel Pérez Berbel<br>
-Juan Antonio Fernández Cabral<br>
-Julio Gutiérrez Figueroa</p>
+        <footer>
+            Proyecto desarrollado para la asignatura de Fundamentos de Hardware
+        </footer>
+    </div>
 </div>
-
-<footer>
-Proyecto desarrollado para la asignatura de Fundamentos de Hardware
-</footer>
-
+</body>
+</html>
 </div>
 </body>
 </html>
