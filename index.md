@@ -87,8 +87,8 @@ Ejemplo de postura correcta para evitar problemas de espalda.
 
 ## Autores
 Trabajo realizado por:  
-- José Manuel Pérez
-- Juan Antonio Fernández 
-- Julio Gutiérrez
+- José Manuel Pérez Berbel
+- Juan Antonio Fernández Cabral
+- Julio Gutiérrez Figueroa
 
 **Proyecto académico - Seguridad en el trabajo informático**
