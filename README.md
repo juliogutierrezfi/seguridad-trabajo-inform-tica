@@ -28,7 +28,7 @@ La página aborda los siguientes puntos clave:
 Este proyecto ha sido desarrollado por:
 
 * José Manuel Pérez Berbel
-* [Nombre del estudiante 2]
+* Julio Gutierrez Figueroa
 * [Nombre del estudiante 3]
 
 ## 🛠️ Tecnologías utilizadas
