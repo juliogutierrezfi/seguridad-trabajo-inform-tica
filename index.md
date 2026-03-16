@@ -1,190 +1,94 @@
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Seguridad en el Trabajo Informático</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:40px;
-            background-color:#f4f4f4;
-        }
-        header{
-            text-align:center;
-            background:#2c3e50;
-            color:white;
-            padding:20px;
-            border-radius:10px;
-        }
-        nav{
-            background:white;
-            padding:15px;
-            margin-top:20px;
-            border-radius:10px;
-        }
-        nav ul{
-            list-style:none;
-            padding:0;
-        }
-        nav li{
-            margin:8px 0;
-        }
-        section{
-            background:white;
-            padding:20px;
-            margin-top:20px;
-            border-radius:10px;
-        }
-        img{
-            max-width:400px;
-            display:block;
-            margin:auto;
-        }
-        footer{
-            text-align:center;
-            margin-top:30px;
-            padding:10px;
-            background:#2c3e50;
-            color:white;
-            border-radius:10px;
-        }
-    </style>
-</head>
+# 🖥️ Seguridad en el Trabajo Informático
 
-<body>
+Riesgos laborales y prevención en entornos tecnológicos.
 
-<header>
-    <h1>Seguridad en el Trabajo Informático</h1>
-    <p>Riesgos laborales y prevención en entornos tecnológicos</p>
-</header>
+---
 
-<nav>
-<h2>Índice</h2>
-<ul>
-<li><a href="#introduccion">Introducción</a></li>
-<li><a href="#importancia">Importancia de la prevención</a></li>
-<li><a href="#riesgos">Riesgos laborales</a></li>
-<li><a href="#prevencion">Medidas de prevención</a></li>
-<li><a href="#imagenes">Ejemplos e imágenes</a></li>
-<li><a href="#referencias">Referencias</a></li>
-<li><a href="#autores">Autores</a></li>
-</ul>
-</nav>
+## 📚 Índice
+- [Introducción](#introducción)
+- [Importancia de la prevención](#importancia-de-la-prevención)
+- [Riesgos laborales](#riesgos-laborales)
+  - [Riesgos ergonómicos](#riesgos-ergonómicos)
+  - [Riesgos visuales](#riesgos-visuales)
+  - [Riesgos eléctricos](#riesgos-eléctricos)
+  - [Riesgos psicosociales](#riesgos-psicosociales)
+- [Medidas de prevención](#medidas-de-prevención)
+- [Ejemplos e imágenes](#ejemplos-e-imágenes)
+- [Referencias](#referencias)
+- [Autores](#autores)
 
-<section id="introduccion">
-<h2>Introducción</h2>
-<p>
-El trabajo informático implica pasar muchas horas frente a un ordenador. 
-Aunque puede parecer un trabajo seguro, existen diferentes riesgos laborales 
-que pueden afectar a la salud física y mental de los trabajadores.
-</p>
+---
 
-<p>
-Por esta razón es importante aplicar medidas de prevención que permitan 
-crear un entorno de trabajo seguro y saludable.
-</p>
-</section>
+## Introducción
 
-<section id="importancia">
-<h2>Importancia de la prevención de riesgos</h2>
+El trabajo informático implica pasar muchas horas frente a un ordenador.  
+Aunque puede parecer un trabajo seguro, existen diferentes riesgos laborales que pueden afectar la salud física y mental de los trabajadores.  
 
-<p>
-La prevención de riesgos laborales permite reducir accidentes, mejorar 
-la salud de los trabajadores y aumentar la productividad. En el ámbito 
-informático es fundamental cuidar aspectos como la ergonomía, la iluminación 
-y la organización del trabajo.
-</p>
+Por esta razón es importante aplicar **medidas de prevención** que permitan crear un entorno de trabajo seguro y saludable.
 
-</section>
+---
 
-<section id="riesgos">
-<h2>Riesgos laborales en informática</h2>
+## Importancia de la prevención de riesgos
 
-<h3>Riesgos ergonómicos</h3>
-<ul>
-<li>Mala postura frente al ordenador</li>
-<li>Dolor de espalda y cuello</li>
-<li>Problemas en muñecas por uso del teclado y ratón</li>
-</ul>
+La prevención de riesgos laborales permite reducir accidentes, mejorar la salud de los trabajadores y aumentar la productividad.  
+En el ámbito informático es fundamental cuidar aspectos como **ergonomía, iluminación y organización del trabajo**.
 
-<h3>Riesgos visuales</h3>
-<ul>
-<li>Fatiga visual</li>
-<li>Sequedad ocular</li>
-<li>Dolores de cabeza</li>
-</ul>
+---
 
-<h3>Riesgos eléctricos</h3>
-<ul>
-<li>Sobrecarga de enchufes</li>
-<li>Cables en mal estado</li>
-<li>Posibles cortocircuitos</li>
-</ul>
+## Riesgos laborales
 
-<h3>Riesgos psicosociales</h3>
-<ul>
-<li>Estrés laboral</li>
-<li>Sobrecarga de trabajo</li>
-<li>Fatiga mental</li>
-</ul>
+### Riesgos ergonómicos
+- Mala postura frente al ordenador  
+- Dolor de espalda y cuello  
+- Problemas en muñecas por uso del teclado y ratón  
 
-</section>
+### Riesgos visuales
+- Fatiga visual  
+- Sequedad ocular  
+- Dolores de cabeza  
 
-<section id="prevencion">
-<h2>Medidas de prevención</h2>
+### Riesgos eléctricos
+- Sobrecarga de enchufes  
+- Cables en mal estado  
+- Posibles cortocircuitos  
 
-<ul>
-<li>Ajustar la altura de la silla y la mesa</li>
-<li>Mantener la pantalla a la altura de los ojos</li>
-<li>Realizar pausas cada cierto tiempo</li>
-<li>Evitar cables desordenados</li>
-<li>Utilizar iluminación adecuada</li>
-</ul>
+### Riesgos psicosociales
+- Estrés laboral  
+- Sobrecarga de trabajo  
+- Fatiga mental  
 
-</section>
+---
 
-<section id="imagenes">
+## Medidas de prevención
+- Ajustar la altura de la silla y la mesa  
+- Mantener la pantalla a la altura de los ojos  
+- Realizar pausas cada cierto tiempo  
+- Evitar cables desordenados  
+- Utilizar iluminación adecuada  
 
-<h2>Ejemplo de ergonomía en el trabajo</h2>
+---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ergonomics.png" alt="Postura correcta frente al ordenador">
+## Ejemplos e imágenes
 
-<p style="text-align:center;">
+**Ejemplo de ergonomía en el trabajo:**  
+
+![Postura correcta frente al ordenador](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ergonomics.png)  
+
 Ejemplo de postura correcta para evitar problemas de espalda.
-</p>
 
-</section>
+---
 
-<section id="referencias">
+## Referencias
+- [Instituto Nacional de Seguridad y Salud en el Trabajo](https://www.insst.es)  
+- [Organización Mundial de la Salud](https://www.who.int)  
+- [Wikipedia - Prevención de riesgos laborales](https://es.wikipedia.org/wiki/Prevención_de_riesgos_laborales)  
 
-<h2>Referencias</h2>
+---
 
-<ul>
-<li><a href="https://www.insst.es" target="_blank">Instituto Nacional de Seguridad y Salud en el Trabajo</a></li>
-<li><a href="https://www.who.int" target="_blank">Organización Mundial de la Salud</a></li>
-<li><a href="https://es.wikipedia.org/wiki/Prevención_de_riesgos_laborales" target="_blank">Wikipedia - Prevención de riesgos laborales</a></li>
-</ul>
+## Autores
+Trabajo realizado por:  
+- Nombre del alumno 1  
+- Nombre del alumno 2  
+- Nombre del alumno 3  
 
-</section>
-
-<section id="autores">
-
-<h2>Autores</h2>
-
-<p>
-Trabajo realizado por:
-</p>
-
-<ul>
-<li>Nombre del alumno 1</li>
-<li>Nombre del alumno 2</li>
-<li>Nombre del alumno 3</li>
-</ul>
-
-</section>
-
-<footer>
-<p>Proyecto académico - Seguridad en el trabajo informático</p>
-</footer>
-
-</body>
-</html>
+**Proyecto académico - Seguridad en el trabajo informático**
