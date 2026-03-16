@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>¿Qué son los Riesgos Laborales?</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
+    /* Sidebar fijo a la izquierda */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
+        padding: 40px 20px;
+        box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .sidebar li {
+        margin: 18px 0;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 6px;
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .sidebar a:hover {
+        background-color: #2980b9;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Contenido principal */
+    .content {
+        margin-left: 270px;
+        padding: 40px;
+        flex: 1;
+    }
+
+    h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #2980b9;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+        .sidebar {
+            position: relative;
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+        }
+        .content {
+            margin-left: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>📚 Índice de contenidos</h1>
+        <ul>
+            <li><a href="riesgos.html" class="active">1. ¿Qué son los riesgos laborales?</a></li>
+            <li><a href="ergonomia.html">2. Riesgos ergonómicos en el uso del ordenador</a></li>
+            <li><a href="electricos.html">3. Riesgos eléctricos y de equipos informáticos</a></li>
+            <li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
+            <li><a href="prevencion.html">5. Medidas de prevención</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>¿Qué son los riesgos laborales?</h2>
+        <p>
+            Los riesgos laborales son todas aquellas condiciones o situaciones presentes en el entorno de trabajo
+            que pueden afectar negativamente a la salud, la seguridad o el bienestar de los trabajadores. 
+            Esto incluye riesgos físicos, químicos, biológicos, ergonómicos y psicosociales.
+        </p>
+
+        <p>
+            En el ámbito de la informática, los riesgos laborales pueden incluir problemas de postura, fatiga visual,
+            sobrecarga de trabajo, estrés, exposición a dispositivos eléctricos y riesgos de ciberseguridad.
+        </p>
+
+        <p>
+            Identificar y comprender los riesgos laborales es fundamental para poder aplicar medidas de prevención
+            que aseguren un entorno de trabajo seguro y saludable para todos los empleados.
+        </p>
+    </div>
+</body>
+</html>
