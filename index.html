@@ -4,77 +4,77 @@
 <meta charset="UTF-8">
 <title>Riesgos Laborales en Informática</title>
 <style>
-    /* Fuente y fondo general */
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(to bottom, #e0eafc, #f0f4f8);
+        background-color: #f0f4f8;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
     }
 
-    /* Contenedor principal del índice */
+    /* Sidebar fijo a la izquierda */
     .sidebar {
-        width: 420px;
+        position: fixed; /* fijo al scroll */
+        top: 0;
+        left: 0;
+        width: 250px; /* ancho del menú */
+        height: 100vh; /* toda la altura de la pantalla */
         background: #fff;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        transition: transform 0.3s;
+        padding: 40px 20px;
+        box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    .sidebar:hover {
-        transform: translateY(-5px);
-    }
-
-    h1 {
+    .sidebar h1 {
         text-align: center;
         color: #2c3e50;
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin-bottom: 30px;
-        letter-spacing: 1px;
     }
 
-    ul {
+    .sidebar ul {
         list-style: none;
         padding-left: 0;
     }
 
-    li {
+    .sidebar li {
         margin: 18px 0;
-        font-size: 1.2em;
-        position: relative;
-        transition: transform 0.2s;
     }
 
-    li:hover {
-        transform: translateX(5px);
-    }
-
-    a {
+    .sidebar a {
         text-decoration: none;
         color: #2980b9;
         font-weight: bold;
-        display: block;
         padding: 8px 12px;
-        border-radius: 8px;
+        border-radius: 6px;
+        display: block;
         transition: all 0.3s;
     }
 
-    a:hover {
+    .sidebar a:hover {
         background-color: #2980b9;
         color: #fff;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
-    /* Responsive para móviles */
-    @media (max-width: 500px) {
+    /* Contenido principal a la derecha del sidebar */
+    .content {
+        margin-left: 270px; /* igual al ancho del sidebar + margen */
+        padding: 40px;
+        flex: 1;
+    }
+
+    @media (max-width: 600px) {
         .sidebar {
-            width: 90%;
-            padding: 25px;
+            position: relative;
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+        }
+        .content {
+            margin-left: 0;
         }
     }
 </style>
@@ -90,6 +90,10 @@
             <li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
             <li><a href="prevencion.html">5. Medidas de prevención</a></li>
         </ul>
+    </div>
+
+    <div class="content">
+        <!-- Aquí iría el contenido principal si quieres agregar algo -->
     </div>
 </body>
 </html>
