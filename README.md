@@ -4,7 +4,7 @@ El objetivo es analizar los posibles riesgos que existen al trabajar con equipos
 
 ## 🚀 Ver la página web
 Puedes ver el resultado final del proyecto aquí:
-👉 **[https://JoseManuelPerez10.github.io/ seguridad-trabajo-informática/]**
+👉 **[https://JoseManuelPerez10.github.io/seguridad-trabajo-informática/]**
 
 ## 📚 Contenidos del Proyecto
 La página aborda los siguientes puntos clave:
