@@ -10,8 +10,10 @@
         margin: 0;
         padding: 0;
         display: flex;
+        color: #333;
     }
 
+    /* Sidebar */
     .sidebar {
         position: fixed;
         top: 0;
@@ -54,18 +56,27 @@
         color: #fff;
     }
 
+    /* Contenido principal */
     .content {
         margin-left: 270px;
         padding: 40px;
         flex: 1;
     }
 
-    h1 {
-        color: #2c3e50;
+    /* Título del proyecto */
+    .proyecto-titulo {
+        color: #e74c3c;           /* rojo brillante */
+        font-size: 2em;            /* tamaño grande */
+        text-align: center;        /* centrado */
+        text-transform: uppercase; /* mayúsculas */
+        letter-spacing: 1px;       /* espacio entre letras */
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra sutil */
     }
 
     p {
         line-height: 1.6;
+        margin-bottom: 15px;
     }
 
     @media (max-width: 600px) {
@@ -94,7 +105,7 @@
     </div>
 
     <div class="content">
-        <h1>¿Qué son los riesgos laborales?</h1>
+        <h1 class="proyecto-titulo">Este es nuestro Proyecto 2: Seguridad en el Trabajo</h1>
 
         <p>
             El riesgo laboral es cualquier situación que puede provocar un daño a la salud de los trabajadores 
@@ -106,8 +117,5 @@
             por lo que es fundamental identificarlos y aplicar medidas de prevención.
         </p>
     </div>
-</body>
-</html>
-
 </body>
 </html>
