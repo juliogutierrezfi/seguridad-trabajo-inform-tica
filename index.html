@@ -6,7 +6,7 @@
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f4f8;
+        background-color: #e9eff5;
         margin: 0;
         padding: 0;
         display: flex;
@@ -61,32 +61,88 @@
         margin-left: 270px;
         padding: 40px;
         flex: 1;
+        background-color: #ffffff; /* fondo blanco */
+        border-radius: 12px;       /* bordes redondeados */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* sombra sutil */
+        transition: all 0.3s ease;
+    }
+
+    .content:hover {
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
 
     /* Título del proyecto */
     .proyecto-titulo {
-        color: #e74c3c;           /* rojo brillante */
-        font-size: 2em;            /* tamaño grande */
-        text-align: center;        /* centrado */
-        text-transform: uppercase; /* mayúsculas */
-        letter-spacing: 1px;       /* espacio entre letras */
+        color: #e74c3c;
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         margin-bottom: 25px;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra sutil */
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
 
     p {
-        line-height: 1.6;
-        margin-bottom: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        font-size: 16px;
     }
 
-    @media (max-width: 600px) {
+    /* Imagen centrada */
+    .imagen {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imagen img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .imagen img:hover {
+        transform: scale(1.03);
+    }
+
+    /* Lista bonita */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    ul li {
+        background: #f0f4f8;
+        margin: 10px 0;
+        padding: 12px 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    ul li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+        body {
+            flex-direction: column;
+        }
+
         .sidebar {
             position: relative;
             width: 100%;
             height: auto;
         }
+
         .content {
             margin-left: 0;
+            margin-top: 20px;
+            padding: 30px 20px;
         }
     }
 </style>
@@ -105,17 +161,20 @@
     </div>
 
     <div class="content">
-        <h1 class="proyecto-titulo">Este es nuestro Proyecto 2: Seguridad en el Trabajo</h1>
+        <h1 class="proyecto-titulo">Proyecto 2: Seguridad en el Trabajo</h1>
 
         <p>
-            El riesgo laboral es cualquier situación que puede provocar un daño a la salud de los trabajadores 
-            durante el desarrollo de su actividad profesional.
+            En este trabajo se analizan de forma colaborativa los riesgos laborales asociados al entorno informático, 
+            abarcando desde la ergonomía física hasta la seguridad de la infraestructura técnica. 
+            El objetivo es identificar peligros potenciales y proponer medidas preventivas eficaces que garanticen 
+            el bienestar del profesional y la integridad de los sistemas digitales, cumpliendo con los estándares 
+            actuales de seguridad y salud en el trabajo.
         </p>
 
-        <p>
-            Estos riesgos pueden causar accidentes, enfermedades o problemas tanto físicos como psicológicos, 
-            por lo que es fundamental identificarlos y aplicar medidas de prevención.
-        </p>
+        <!-- Imagen del proyecto -->
+        <div class="imagen">
+            <img src="prevencion-de-riesgos-laborales-1.jpg" alt="Prevención de riesgos laborales">
+        </div>
     </div>
 </body>
 </html>
