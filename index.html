@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Riesgos Laborales en Informática</title>
 <style>
     body {
@@ -10,21 +11,19 @@
         margin: 0;
         padding: 0;
         display: flex;
+        color: #333;
     }
 
     /* Sidebar fijo a la izquierda */
     .sidebar {
-        position: fixed; /* fijo al scroll */
+        position: fixed;
         top: 0;
         left: 0;
-        width: 250px; /* ancho del menú */
-        height: 100vh; /* toda la altura de la pantalla */
+        width: 250px;
+        height: 100vh;
         background: #fff;
         padding: 40px 20px;
         box-shadow: 2px 0 15px rgba(0,0,0,0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
 
     .sidebar h1 {
@@ -56,44 +55,135 @@
     .sidebar a:hover {
         background-color: #2980b9;
         color: #fff;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     /* Contenido principal a la derecha del sidebar */
     .content {
-        margin-left: 270px; /* igual al ancho del sidebar + margen */
+        margin-left: 270px;
         padding: 40px;
         flex: 1;
+        max-width: 900px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #34495e;
+        border-left: 5px solid #3498db;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin: 8px 0;
+    }
+
+    /* Imagen centrada con sombra y borde redondeado */
+    .imagen {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .imagen img {
+        max-width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        height: auto;
+    }
+
+    /* Caja destacada */
+    .card {
+        background: #eaf4ff;
+        padding: 15px;
+        border-left: 5px solid #2980b9;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-weight: 600;
     }
 
     @media (max-width: 600px) {
+        body {
+            flex-direction: column;
+        }
+
         .sidebar {
             position: relative;
             width: 100%;
             height: auto;
             box-shadow: none;
+            padding: 20px;
         }
+
         .content {
             margin-left: 0;
+            padding: 20px;
+            max-width: 100%;
         }
     }
 </style>
 </head>
-
 <body>
+
     <div class="sidebar">
         <h1>📚 Índice de contenidos</h1>
         <ul>
-            <li><a href="riesgos.html">1. ¿Qué son los riesgos laborales?</a></li>
-            <li><a href="ergonomia.html">2. Riesgos ergonómicos en el uso del ordenador</a></li>
-            <li><a href="electricos.html">3. Riesgos eléctricos y de equipos informáticos</a></li>
-            <li><a href="ciberseguridad.html">4. Riesgos de ciberseguridad</a></li>
-            <li><a href="prevencion.html">5. Medidas de prevención</a></li>
+            <li><a href="#riesgos">1. ¿Qué son los riesgos laborales?</a></li>
+            <li><a href="#ergonomia">2. Riesgos ergonómicos en el uso del ordenador</a></li>
+            <li><a href="#electricos">3. Riesgos eléctricos y de equipos informáticos</a></li>
+            <li><a href="#ciberseguridad">4. Riesgos de ciberseguridad</a></li>
+            <li><a href="#prevencion">5. Medidas de prevención</a></li>
         </ul>
     </div>
 
     <div class="content">
-        <!-- Aquí iría el contenido principal si quieres agregar algo -->
+        <h1 id="riesgos">¿Qué son los riesgos laborales?</h1>
+        <p>
+            El riesgo laboral es un concepto fundamental en el ámbito de la seguridad y salud en el trabajo.
+            Se refiere a cualquier circunstancia que pueda causar un peligro durante el desarrollo de una actividad laboral,
+            resultando en accidentes o daños físicos y/o psicológicos para los trabajadores.
+        </p>
+
+        <h2 id="ergonomia">Riesgos ergonómicos en el uso del ordenador</h2>
+        <p>
+            Estos riesgos incluyen movimientos repetitivos, posturas forzadas y manipulación manual de cargas que pueden causar lesiones musculoesqueléticas.
+        </p>
+
+        <h2 id="electricos">Riesgos eléctricos y de equipos informáticos</h2>
+        <p>
+            Incluyen la posibilidad de electrocución, cortocircuitos, o fallos en el hardware que puedan poner en riesgo la seguridad de los trabajadores.
+        </p>
+
+        <h2 id="ciberseguridad">Riesgos de ciberseguridad</h2>
+        <p>
+            Se refieren a amenazas digitales como virus, ataques informáticos o pérdida de datos que pueden afectar tanto a la empresa como a sus empleados.
+        </p>
+
+        <h2 id="prevencion">Medidas de prevención</h2>
+        <p>
+            El uso correcto del equipo, pausas activas, mantener los equipos actualizados y la concienciación son claves para prevenir riesgos laborales.
+        </p>
+
+        <div class="imagen">
+            <img src="prevencion-de-riesgos-laborales-1.jpg" alt="Prevención de riesgos laborales" />
+        </div>
+
+        <div class="card">
+            ⚠️ La prevención de riesgos laborales es clave para evitar accidentes y mejorar el bienestar de los trabajadores.
+        </div>
     </div>
+
 </body>
 </html>
