@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riesgos de Ciberseguridad | Riesgos Laborales en Informática</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-main: #333;
+            --danger-color: #dc3545;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 5px solid var(--danger-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            border-top: 4px solid var(--danger-color);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: var(--danger-color);
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Riesgos de Ciberseguridad</h1>
+        <p>Principales amenazas informáticas en el entorno laboral</p>
+    </header>
+
+    <div class="container">
+        <p>En el sector informático, los riesgos laborales no solo son físicos (ergonomía, fatiga visual), sino también digitales. La exposición a vulnerabilidades de la red puede comprometer tanto al empleado como a la infraestructura de la empresa.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Malware y Ransomware</h3>
+                <p>Software malicioso diseñado para infiltrarse en los sistemas, dañar archivos o secuestrar datos pidiendo un rescate. Puede paralizar por completo la actividad laboral de la empresa.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Phishing e Ingeniería Social</h3>
+                <p>Técnicas de manipulación psicológica donde los atacantes se hacen pasar por entidades de confianza para robar credenciales, contraseñas o información confidencial de los empleados.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Fugas de Información</h3>
+                <p>Pérdida de confidencialidad de los datos sensibles de la empresa, ya sea por errores humanos (enviar un correo a la persona equivocada) o por ataques internos y externos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ataques de Denegación de Servicio (DDoS)</h3>
+                <p>Sobrecarga intencionada de los servidores o la red de la empresa, lo que impide a los trabajadores acceder a las herramientas y plataformas necesarias para realizar su trabajo.</p>
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
